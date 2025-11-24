@@ -4,10 +4,10 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 import numpy as np
 
-iris = load_diabetes()
+dataset = load_diabetes()
 
-X = iris['data']
-y = iris['target']
+X = dataset['data']
+y = dataset['target']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
