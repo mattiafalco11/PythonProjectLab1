@@ -1,10 +1,10 @@
-from sklearn.datasets import load_iris
+from sklearn.datasets import load_diabetes
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 import numpy as np
 
-iris = load_iris()
+iris = load_diabetes()
 
 X = iris['data']
 y = iris['target']
